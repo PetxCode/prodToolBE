@@ -114,7 +114,8 @@ export const signInAccount = async (
 
       if (passed) {
         return res.status(201).json({
-          message: `Welcome back ${user.userName}`,
+          message: `Welcome back ${user.userName},`,
+          data: user._id,
         });
       } else {
         return res.status(404).json({
