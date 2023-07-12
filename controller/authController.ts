@@ -14,7 +14,7 @@ export const readUser = async (
       data: user,
     });
   } catch (error) {
-    return res.status(404).json({ message: error.message });
+    return res.status(404).json({ message: error });
   }
 };
 
@@ -31,7 +31,7 @@ export const readOneUser = async (
       data: user,
     });
   } catch (error) {
-    return res.status(404).json({ message: error.message });
+    return res.status(404).json({ message: error });
   }
 };
 
@@ -53,7 +53,7 @@ export const updateOneUser = async (
       data: user,
     });
   } catch (error) {
-    return res.status(404).json({ message: error.message });
+    return res.status(404).json({ message: error });
   }
 };
 
@@ -70,7 +70,7 @@ export const deleteOneUser = async (
       data: user,
     });
   } catch (error) {
-    return res.status(404).json({ message: error.message });
+    return res.status(404).json({ message: error });
   }
 };
 
@@ -96,7 +96,7 @@ export const createAccount = async (
       data: user,
     });
   } catch (error) {
-    return res.status(404).json({ message: error.message });
+    return res.status(404).json({ message: error });
   }
 };
 
@@ -128,6 +128,6 @@ export const signInAccount = async (
       });
     }
   } catch (error) {
-    return res.status(404).json({ message: error.message });
+    return res.status(404).json({ message: error });
   }
 };

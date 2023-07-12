@@ -4,8 +4,9 @@
   "description": "This is a simple productivity tool for class07 bootcamp",
   "main": "index.js",
   "scripts": {
-    "test": "npm start",
-    "start": "ts-node-dev --respawn --transpile-only index.ts "
+    "start": "node src/dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only index.ts"
   },
   "repository": {
     "type": "git",
